@@ -1,12 +1,6 @@
-EECS 3221 Project 3
-Name: Giseung Kim
-Student #: 212981858
-EECS login: giseung
+Design and Implementation of a Virtual Memory Unit (MMU)
 
-I have two version of the memory management unit
-mmu.c is the first part of the project without page replacement
-mmuLRU.c is the modified second part of the project with LRU page replacement
-I did not modify test.sh as I did not use it for the means of testing. I did it manually myself on terminal
+This project is a program that translates logical to physical addresses for a virtual address space of size 216 = 65,536 bytes. This program read from a file containing logical addresses and, using a TLB and a page table, translate each logical address to its corresponding physical address and output the value of the byte stored at the translated physical address. This  simulates the steps involved in translating logical to physical addresses including resolving page faults using demand paging, managing a TLB, and implementing a page-replacement algorithm.
 
 So the command for first mmu.c will be:
 	gcc mmu.c
